@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, rgb(0, 147, 233), rgb(128, 208, 199));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90%;
+    width: 1000px;
+    background-color: white;
+    box-shadow: 0 5px 10 black;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.icon-container {
+    position: relative;
+    top: 70px;
+    padding: 20px;
+    background-color: white;
+    width: 140px;
+    height: 140px;
+}
+
+.general-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.status {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.location {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+.detail-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.detail-bordered {
+    border-left: 4px #666;
+    border-right: 4px #666;
+    font-size: 2rem;
+    flex-grow: 1;
+    font-weight: 600;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    flex-grow: 1;
+    font-weight: 600;
+    color: #666;
+}
+
+.value {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.city-search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.city-search {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.pac-item {
+    font-size: 2rem;
+    padding: 10px 10px;
+}
+
+.pac-icon {
+    display: none;
+}
+
+.pac-item-query {
+    font-size: 2rem;
+    padding-right: 14px;
+}

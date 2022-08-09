@@ -5,22 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
-    <script defer src="script.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
-    <script defer async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4rrMiuJyhKoHLkkannqiZga_BhULhMYY&libraries=places&callback=initMap"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.js" integrity="sha512-6Qi7qYyfdjqiOXOqpU4OYEPpcm4hE0IQGP/8YY9csFpkdbaOcSWlSWwkdADw/8nOtWqsjdibbiBsRhoRyjk1YQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="script.js"></script>
+    <title>Weather</title>
 </head>
 
 <body>
     <div class="container">
         <div class="header">
             <div class="icon-container">
-                <canvas id="icon" width="100" height="100"></canvas>
+                <canvas id="icon1" width="100" height="100"></canvas>
             </div>
         </div>
         <div class="content">
@@ -45,6 +43,7 @@
         </div>
         <div class="city-search-container">
             <input type="text" class="city-search" data-city-search placeholder="Enter Location">
+            <input type="submit" value="Submit" class="submit" data-city-submit>
         </div>
     </div>
     </div>

@@ -2,7 +2,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
 }
 
-const MAP_API_KEY = process.env.MAP_API_KEY
+const APP_API_KEY = process.env.APP_API_KEY
 const axios = require('axios')
 const express = require('express')
 const app = express()
@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(express.static('public'))
 
 app.post('/weather', (req, res) => {
-    const url = 'https://weatherkit.apple.com/api/v1/availability/${req.body.latitude}/${req.body.longtitude}?units=auto'
+    const url = 'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=/${APP_API_KEY}'
     axios({
         url: url,
         responseType: 'json'

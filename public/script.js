@@ -1,24 +1,16 @@
-var search = document.querySelector('[data-city-search]')
-var wind = document.querySelector('[data-wind]')
-var temperature = document.querySelector('[data-temperature]')
-var precip = document.querySelector('[data-precipitation]')
+const button = document.querySelector('.submit')
+const search = document.querySelector('[data-city-search]')
+const wind = document.querySelector('[data-wind]')
+const temperature = document.querySelector('[data-temperature]')
+const precip = document.querySelector('[data-precipitation]')
 
-fetch('/weather', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    'Accept': 'application/json'
-  },
+button.addEventListener('click', function(name){
+fetch('https://api.openweathermap.org/data/2.5/weather?=city.name&appid=b50b4b8c081de0f71583cf50189c755f')
+.then(response => response.json())
+.then(data => console.log(data)) 
 
-  button.addEventListener('click', function () {
-    .then(response => response.json())
-    .then(data => {
-      var wind = document.querySelector('[data-wind]')
-      var temperature = document.querySelector('[data-temperature]')
-      var precip = document.querySelector('[data-precipitation]')
-    }
 
-const icon1 = new Skycons({ color: '#222' })
+const icon1 = new Skycons({ color: '#222' }) 
   icon1.set('icon', 'clear-day')
   icon1.play()
-
+})

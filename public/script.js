@@ -5,7 +5,7 @@ const temperature = document.querySelector('[data-temperature]')
 const precip = document.querySelector('[data-precipitation]')
 
 button.addEventListener('click', function(name){
-fetch('https://api.openweathermap.org/data/2.5/weather?=city.name&appid=b50b4b8c081de0f71583cf50189c755f')
+fetch('https://api.openweathermap.org/data/2.5/weather?q=city.name&appid=b50b4b8c081de0f71583cf50189c755f')
 .then(response => response.json())
 .then(data => console.log(data)) 
 

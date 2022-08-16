@@ -48,16 +48,16 @@ body {
     margin-top: 40px;
 }
 
-.detail {
+/* .detail {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-basis: 0;
     flex-grow: 1;
     padding: 20px;
-}
+} */
 
-.detail-bordered {
+.detail {
     border-left: 4px #666;
     border-right: 4px #666;
     font-size: 2rem;

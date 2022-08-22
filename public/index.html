@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
     <script defer src="script.js"></script>
     <title>Weather</title>
 </head>
@@ -17,14 +16,14 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="icon-container">
-                <canvas id="icon1" width="100" height="100"></canvas>
-            </div>
+            <!-- <div class="icon-container">
+                <div class="weather-icon"><img src="icons/unknown.png" /></div>
+            </div> -->
         </div>
         <div class="content">
             <div class="general-information">
-                <div class="status">How's the weather in...</div>
-                <div class="location">A few clicks away to find out!</div>
+                <div class="status" id="cityname">How's the weather in...</div>
+                <div class="location" id="desc">A few clicks away to find out!</div>
             </div>
             <div class="detail-section">
                 <div class="detail">

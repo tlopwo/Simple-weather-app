@@ -17,9 +17,9 @@ button.addEventListener('click', function(){
     var citynameValue = data['name']
     var descValue = "Currently: " + data['weather'][0]['description'] 
 
-    temperature.innerHTML = temperatureValue;
+    temperature.innerHTML = temperatureValue.toFixed();
     wind.innerHTML = windValue;
-    pressure.innerHTML = pressureValue;
+    pressure.innerHTML = pressureValue.toFixed();
     cityname.innerHTML = citynameValue;
     desc.innerHTML = descValue;
   })

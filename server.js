@@ -2,7 +2,6 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
 }
 
-const APP_API_KEY = process.env.APP_API_KEY
 const axios = require('axios')
 const express = require('express')
 const app = express()

@@ -4,8 +4,7 @@ const wind = document.querySelector('[data-wind]')
 const temperature = document.querySelector('[data-temperature]')
 const pressure = document.querySelector('[data-pressure]')
 let desc = document.getElementById('desc')
-const APIkey = 'key-not-public'
-
+const APIkey = 'key'
 
 button.addEventListener('click', function(){
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search.value}&units=metric&appid=${APIkey}`)

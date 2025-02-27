@@ -19,4 +19,5 @@ app.post('/weather', (req, res) => {
 
 app.listen(3000, () => {
     console.log('SERVER ON')
+    console.log('App hosted - http://localhost:3000/')
 })
